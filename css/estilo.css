@@ -42,12 +42,14 @@
     background-color: #D3EE9F;
     display: flex;
     padding-top: 50px;
+    height: 600px;
 }
 footer{
     width: 100%;
     background-color: #7B9E35;
-    display: flex;
-    padding: 30px;
+    position: absolute;
+    bottom: 0%;
+
  
 }
 ul li{
@@ -138,16 +140,48 @@ h1{
 }
 #marcoDetalleFooter{
     flex: 35%;
+    text-align: center;
+    animation: move 5s infinite;
+    position: relative;
+
 }
 #marcoRedesfooter{
     flex: 45%;
+    text-align: right;
 }
 .footerRedes{
     display: inline;
 }
 li img{
     width: 28px;
+
 }
 .footerRedes li{
     border: none;
+}
+#footerMenu{
+    display: flex;
+    padding: 30px;
+}
+nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+nav a:hover{
+    color: #550101;
+    font-size: 25px;
+}
+@keyframes move{
+    from {top:0px;}
+    to {top: 40px;}
+
+}
+li img:hover{
+    opacity: 60%;
+    width: 4%;
 }
