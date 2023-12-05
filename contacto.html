@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/formulario.css">
     <title>Document</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
             <li id="LogoInicio"><a href="index.html">Inicio</a></li>
             <li><a href="#">Mis libros</a></li>
             <li><a href="#">Mi musica</a></li>
-            <li><a href="#">Mis videos</a></li>
+            <li><a href="galeria.html">Mis videos</a></li>
             <li><a href="contacto.html">Contactenos</a></li>
             <li><a href="#">Acerca de</a></li>
         </ul>     
@@ -28,6 +29,30 @@
     </div>
     <!--Aqui pondremos el cuerpo del index-->
     <div id="contenidoCuerpo">
+        <div id="formularioDatos">
+            <fieldset>
+                <legend>Mis Datos</legend>
+                <form>
+                    <label>Mi nombre</label>
+                    <input type="text" placeholder="Ingrese Nombre">
+                    <label>Mi Apellido</label>
+                    <input type="text" placeholder="Ingrese Apellido">
+                    <label>Mi Edad</label>
+                    <input type="number">
+                    <label>Mi Ciudad</label>
+                <select>
+                    <option value="Cbba">Cochabamba</option>
+                    <option value="La Paz">La Paz</option>
+                    <option value="Sucre">Sucre</option>
+                    <option value="Scz">Santa Cruz</option>
+                    <option value="Tarija">Tarija</option>
+                </select>
+                <label>Descripcion</label>
+                <textarea></textarea>
+                <input type="button" value="ENVIAR">
+                </form>
+            </fieldset>
+        </div>
         
     </div>
     <!--Aqui pondremos el pie de pagina-->
@@ -36,7 +61,7 @@
 <div id="marcoMenufooter">
     <nav>
         <a href="index.html">Inicio</a>
-        <a href="#">Mis Videos</a>
+        <a href="galeria.html">Mis Videos</a>
         <a href="#">Mi Musica</a>
         <a href="contacto.html">Contactenos</a>
     </nav>
